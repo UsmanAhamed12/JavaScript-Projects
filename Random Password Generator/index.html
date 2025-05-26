@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generate a</h1>
+        <span>Random Password</span>
+        <input type="text" placeholder="Password" id='input'>
+        <div class="copy-icon">
+            <img src="/Random Password Generator/download.png" width="30px" onclick="copypassword()">
+        </div>
+        <button onclick="Generatepassword()">Generate Password</button>
+        <div class="lightning-icon">
+            <!-- <img src="/Random Password Generator/download (2).png" width="30px"> -->
+            &#9889;
+        </div>
+    </div>
+
+    <script>
+        const inputbox = document.getElementById("input");
+        const length = 12;
+
+        const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowercase = "abcdefghijklmnopqrstuvwxyz";
+        const number = "1234567890"
+        const special = "!@#$%^&*()_+[]{}|;:,.<>?";
+
+        const allchar = uppercase + lowercase + number + special;
+
+        function Generatepassword() {
+            let Password = "";
+
+            for (let i = 0; i < length; i++) {
+                const randomindex = Math.round(Math.random() * allchar.length);
+                Password += allchar[randomindex];
+            }
+            inputbox.value = Password;
+        }
+
+
+        function copypassword() {
+            inputbox.select();
+            document.execCommand('copy');
+        }
+    </script>
+</body>
+
+</html>

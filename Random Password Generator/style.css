@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(0,35,67);
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    /* background: aqua; */
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+.container span{
+    display: inline-block;
+    font-size: 50px;
+    color: rgb(1, 156, 1);
+    
+    border-bottom: 2px solid rgb(1, 156, 1); /* Customize thickness and color */
+    padding-bottom: 10px; 
+    font-weight: 400;
+    
+
+}
+
+.container button{
+    display: block;
+}
+
+.container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.container input{
+    margin-top: 20px;
+    width: 100%;
+    height: 15%;
+    padding-left: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.container button{
+    margin-top: 20px;
+    width: 40%;
+    height: 10%;
+    font-size: 15px;
+    background:rgb(1, 156, 1) ;
+    border: none;
+    color: white;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.copy-icon{
+    position: absolute;
+    right: 2%;
+    top: 37%;
+    cursor: pointer;
+    
+}
+
+.lightning-icon{
+    position: absolute;
+    left: 2%;
+    top: 54%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    
+}
