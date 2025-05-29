@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: url('/Slither Snake Game/game\ background.jpg');
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playarea{
+    background: linear-gradient(rgb(120, 228, 131), rgb(154, 171, 61));
+    height: 90vmin;
+    width: 90vmin;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+
+}
+
+.snake{
+ background-color: green;
+}
+
+.head{
+ background-color: black;
+
+}
+
+
+
+.food{
+background-color: rgb(99, 66, 7);
+border-radius: 50%;
+margin: 8px;
+}
