@@ -31,6 +31,8 @@ body{
 
 .head{
  background-color: black;
+ z-index: 100;
+ border-radius: 20px 20px 20px 20px;
 
 }
 
@@ -40,4 +42,16 @@ body{
 background-color: rgb(99, 66, 7);
 border-radius: 50%;
 margin: 8px;
+}
+
+.scorebox, .Heighscorebox{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.scorebox{
+    top: 50px;
 }
