@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d06515e8d.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="./Media/Media/i.jpg" alt="">
+            <h1>Aila Aila</h1>
+            <p>Aditya Rao, Natalie Di Luccio</p>
+
+            <audio  id="song">
+                <source src="./Media/Media/Aila-Aila.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controles">
+                <div id="fwd" onclick="fwd()">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div  onclick="playpause()">
+                    <i class="fa-solid fa-play" id="ctrlIcon" ></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
