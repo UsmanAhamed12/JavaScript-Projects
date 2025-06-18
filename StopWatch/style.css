@@ -1,0 +1,35 @@
+body{
+    background: #d49090;
+}
+
+.stopwatch{
+    background: #7a7a7a;
+    width: 90%;
+    max-width: 400px;
+    margin: 200px auto 0;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+
+}
+
+.stopwatch h1{
+    font-size:70px;
+    color: white;
+}
+
+.stopwatch button{
+    width: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 40px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.stopwatch button:nth-child(2){
+    font-size: 50px;
+}
